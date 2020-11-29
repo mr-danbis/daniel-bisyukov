@@ -16,6 +16,35 @@
     width: 230px
     height: 230px
 
+  .packages
+    &-content
+      display: grid
+      grid-template: repeat(3, 475px)/repeat(2, 470px)
+      grid-gap: 20px
+    &-title
+      font-size: 30px
+      line-height: 25px
+      margin-bottom: 35px
+    &-card
+      width: 100%
+      &--large
+        grid-area: 1/1/2/3
+      &__image
+        width: 100%
+        object-fit: cover
+        &--large
+          min-width: 469px
+      &__info
+        padding: 15px 30px
+      &__title
+        margin-bottom: 15px
+        order: -1
+      &__name
+        display: flex
+        justify-content: space-between
+    &-booking
+      margin-bottom: 10px
+
 //max-width:  992px
 @media ( max-width:  992px )
   .container,
@@ -76,6 +105,29 @@
     height: 230px
     &__image
       width: 2500px
+
+  .packages
+    &-content
+      display: grid
+      grid-template: repeat(3, 475px)/repeat(2, 340px)
+      grid-gap: 20px
+    &-title
+      font-size: 30px
+      line-height: 25px
+      margin-bottom: 35px
+    &-card
+      width: 100%
+      &--large
+        grid-area: 1/1/2/3
+        width: 100%
+      &__image
+        width: 100%
+
+        object-fit: cover
+        &--large
+          min-width: 365px
+      &__info
+        padding: 20px 30px
 
 //max-width: 767px
 @media ( max-width: 767px )
@@ -200,7 +252,6 @@
       line-height: 23px
       text-align: center
       margin-bottom: 42px
-    
 
   .card
     width: 100%
@@ -213,6 +264,42 @@
       font-size: 18px
       line-height: 23px
       text-transform: uppercase
+
+  .packages
+    &-content
+      display: grid
+      grid-template: repeat(3, 375px)/repeat(2, 48%)
+      grid-gap: 20px
+    &-title
+      font-size: 30px
+      line-height: 25px
+      margin-bottom: 35px
+    &-card
+      width: 100%
+      &--large
+        grid-area: 1/1/2/3
+        width: 100%
+      &__image
+        width: 100%
+        height: 40%
+        object-fit: cover
+        &--large
+          min-width: 30%
+          height: 100%
+      &__info
+        padding: 10px 20px
+        &--large
+      &__text
+        &--large
+          display: none
+      &-bottom
+        &--large
+          display: flex
+          flex-direction: column
+        &__button
+          p11-15
+    &-rating
+      display: none
 
 //max-width: 340px
 @media ( max-width: 340px )
