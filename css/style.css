@@ -1756,7 +1756,7 @@ template {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 605px) {
   .packages-content {
     display: -ms-grid;
     display: grid;
