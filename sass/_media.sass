@@ -122,7 +122,6 @@
         width: 100%
       &__image
         width: 100%
-
         object-fit: cover
         &--large
           min-width: 365px
@@ -221,9 +220,68 @@
   .activities
     padding-top: 40px
     padding-bottom: 60px
+
   .card
     width: 49%
     height: 255px
+    &-bottom
+      &__new
+        font-size: 20px
+      &__old
+        font-size: 12px
+      &__button
+        padding: 10px 10px
+
+  .packages
+    &-content
+      display: grid
+      grid-template: repeat(3, 343px)/repeat(2, 48.5%)
+      grid-gap: 20px
+
+    &-title
+      font-size: 25px
+      line-height: 25px
+      margin-bottom: 35px
+
+    &-card
+      width: 100%
+      &--large
+        grid-area: 1/1/2/3
+        width: 100%
+      &__image
+        width: 100%
+        height: 40%
+        object-fit: cover
+        &--large
+          min-width: 50%
+          height: 100%
+      &__info
+        height: 60%
+        padding: 10px 20px
+        &--large
+          height: 100%
+      &__text
+        &--large
+          display: none
+      &__title
+        font-size: 16px
+
+    &-rating
+      display: none
+
+    &-booking
+      &__description
+        font-size: 14px
+      &__text
+        margin-bottom: 7px
+
+//max-width: 607px
+@media ( max-width: 607px )
+  .packages
+    &-booking
+      &__text
+        &--long
+          display: none
 
 //max-width: 576px
 @media ( max-width: 576px )
@@ -255,6 +313,9 @@
 
   .card
     width: 100%
+    &-bottom
+      &__button
+        font-size: 14px
 
   .activities
     &__title
@@ -265,41 +326,78 @@
       line-height: 23px
       text-transform: uppercase
 
+//max-width: 500px
+@media ( max-width: 500px )
   .packages
     &-content
       display: grid
-      grid-template: repeat(3, 375px)/repeat(2, 48%)
+      grid-template: repeat(5, 230px)/repeat(2, 48%)
       grid-gap: 20px
-    &-title
-      font-size: 30px
-      line-height: 25px
-      margin-bottom: 35px
     &-card
-      width: 100%
-      &--large
-        grid-area: 1/1/2/3
-        width: 100%
+      display: flex
+      flex-direction: row
+      &--small_1
+        grid-area: 2/1/3/3
+      &--small_2
+        grid-area: 3/1/4/3
+      &--small_3
+        grid-area: 4/1/5/3
+      &--small_4
+        grid-area: 5/1/6/3
       &__image
-        width: 100%
-        height: 40%
-        object-fit: cover
+        width: 40%
+        height: 100%
+        border-radius: 8px 0px 0px 8px
         &--large
-          min-width: 30%
-          height: 100%
+          min-width: 40%
       &__info
-        padding: 10px 20px
-        &--large
+        height: 100%
+        display: flex
+        justify-content: space-around
+      &__flash-offer
+        padding: 8px 12px
+        font-size: 8px
+        line-height: 10px
+
+    &-booking
       &__text
-        &--large
-          display: none
-      &-bottom
-        &--large
-          display: flex
-          flex-direction: column
-        &__button
-          p11-15
-    &-rating
+        &--long
+          display: inline
+          margin-bottom: 7px
+
+//max-width: 400px
+@media ( max-width: 400px )
+  .packages
+    &-booking
       display: none
+    &-content
+      display: grid
+      grid-template: repeat(5, 200px)/repeat(2, 48%)
+      grid-gap: 15px
+    &-title
+      font-size: 20px
+      margin-top: 20px
+    &-card
+      &__info
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        width: 100%
+
+
+  .card
+    &-bottom
+      display: flex
+      flex-direction: column
+      &__price
+        display: flex
+        align-items: center
+        margin-top: -30px
+        margin-bottom: 20px
+      &__button
+        padding: 10px 35px 10px 35px
+    
 
 //max-width: 340px
 @media ( max-width: 340px )
