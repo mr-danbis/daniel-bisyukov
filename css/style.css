@@ -1705,64 +1705,13 @@ template {
   }
 }
 
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
-  }
-  .hotel__slider {
-    margin-bottom: 20px;
-  }
-  .hotel-slider {
-    height: 250px;
-  }
-  .newsletter {
-    padding: 76px 0 83px 0;
-  }
-  .newsletter__title {
-    margin-bottom: 37px;
-  }
-  .subscribe {
-    width: 100%;
-  }
-  .reviews__title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    margin-bottom: 42px;
-  }
-  .card {
-    width: 100%;
-  }
-  .card-bottom__button {
-    font-size: 14px;
-  }
-  .activities__title {
-    margin-bottom: 36px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 23px;
-    text-transform: uppercase;
-  }
-  .packages-content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (343px)[3];
-    -ms-grid-columns: (48.1%)[2];
-        grid-template: repeat(3, 343px)/repeat(2, 48.1%);
-    grid-gap: 20px;
-  }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 605px) {
   .packages-content {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (400px)[5];
-    -ms-grid-columns: (47.7%)[2];
-        grid-template: repeat(5, 400px)/repeat(2, 47.7%);
+    -ms-grid-columns: (48%)[2];
+        grid-template: repeat(5, 400px)/repeat(2, 48%);
     grid-gap: 20px;
   }
   .packages-card {
@@ -1832,6 +1781,57 @@ template {
   .packages-title {
     font-size: 20px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+  .hotel-slider {
+    height: 250px;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+  .subscribe {
+    width: 100%;
+  }
+  .reviews__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-bottom__button {
+    font-size: 14px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+  }
+  .packages-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (343px)[3];
+    -ms-grid-columns: (47.6%)[2];
+        grid-template: repeat(3, 343px)/repeat(2, 47.6%);
+    grid-gap: 20px;
   }
 }
 
