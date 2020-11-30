@@ -1384,7 +1384,7 @@ template {
        object-fit: cover;
   }
   .packages-card__image--large {
-    min-width: 469px;
+    min-width: 50%;
   }
   .packages-card__info {
     padding: 15px 30px;
@@ -1506,9 +1506,6 @@ template {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .packages-card__image--large {
-    min-width: 365px;
   }
   .packages-card__info {
     padding: 20px 30px;
@@ -1654,8 +1651,8 @@ template {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (343px)[3];
-    -ms-grid-columns: (48.5%)[2];
-        grid-template: repeat(3, 343px)/repeat(2, 48.5%);
+    -ms-grid-columns: (48.4%)[2];
+        grid-template: repeat(3, 343px)/repeat(2, 48.4%);
     grid-gap: 20px;
   }
   .packages-title {
@@ -1708,12 +1705,6 @@ template {
   }
 }
 
-@media (max-width: 607px) {
-  .packages-booking__text--long {
-    display: none;
-  }
-}
-
 @media (max-width: 576px) {
   .logo {
     width: 99px;
@@ -1755,25 +1746,33 @@ template {
     line-height: 23px;
     text-transform: uppercase;
   }
+  .packages-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (343px)[3];
+    -ms-grid-columns: (48.1%)[2];
+        grid-template: repeat(3, 343px)/repeat(2, 48.1%);
+    grid-gap: 20px;
+  }
 }
 
 @media (max-width: 500px) {
   .packages-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (230px)[5];
-    -ms-grid-columns: (48%)[2];
-        grid-template: repeat(5, 230px)/repeat(2, 48%);
+    -ms-grid-rows: (400px)[5];
+    -ms-grid-columns: (47.7%)[2];
+        grid-template: repeat(5, 400px)/repeat(2, 47.7%);
     grid-gap: 20px;
   }
   .packages-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .packages-card--small_1 {
     -ms-grid-row: 2;
@@ -1804,12 +1803,14 @@ template {
     grid-area: 5/1/6/3;
   }
   .packages-card__image {
-    width: 40%;
-    height: 100%;
-    border-radius: 8px 0px 0px 8px;
+    width: 100%;
+    height: 50%;
+    border-radius: 8px 0px 0px 0;
   }
   .packages-card__image--large {
-    min-width: 40%;
+    width: 100%;
+    height: 45%;
+    border-radius: 8px 0px 0px 0;
   }
   .packages-card__info {
     height: 100%;
@@ -1828,60 +1829,9 @@ template {
     display: inline;
     margin-bottom: 7px;
   }
-}
-
-@media (max-width: 400px) {
-  .packages-booking {
-    display: none;
-  }
-  .packages-content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (200px)[5];
-    -ms-grid-columns: (48%)[2];
-        grid-template: repeat(5, 200px)/repeat(2, 48%);
-    grid-gap: 15px;
-  }
   .packages-title {
     font-size: 20px;
     margin-top: 20px;
-  }
-  .packages-card__info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-  }
-  .card-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .card-bottom__price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: -30px;
-    margin-bottom: 20px;
-  }
-  .card-bottom__button {
-    padding: 10px 35px 10px 35px;
   }
 }
 
@@ -1891,6 +1841,14 @@ template {
   }
   .reviews-slider__text {
     text-align: left;
+  }
+  .packages-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (400px)[5];
+    -ms-grid-columns: (47%)[2];
+        grid-template: repeat(5, 400px)/repeat(2, 47%);
+    grid-gap: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
