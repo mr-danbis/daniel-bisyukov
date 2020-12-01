@@ -45,6 +45,10 @@
     &-booking
       margin-bottom: 10px
 
+  .footer
+    &__input
+      flex-basis: 100%
+
 //max-width:  992px
 @media ( max-width:  992px )
   .container,
@@ -125,6 +129,39 @@
         object-fit: cover
       &__info
         padding: 20px 30px
+
+  .footer
+    &-grid
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      grid-row: 1/2
+      grid-column: span 2
+    &__social
+      &-network
+        align-self: center
+        grid-row: 1/2
+        grid-column: span 4
+    &__categories
+      grid-row: 2/3
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+      &-form
+        grid-row: 4
+        grid-column: span 5
+    &__bottom
+      display: flex
+      flex-direction: row
+      margin-left: 0
 
 //max-width: 767px
 @media ( max-width: 767px )
@@ -273,51 +310,9 @@
       &__text
         margin-bottom: 7px
 
-//max-width: 605px
-@media ( max-width: 605px )
-  .packages
-    &-content
-      display: grid
-      grid-template: repeat(5, 400px)/repeat(2, 48%)
-      grid-gap: 20px
-    &-card
-      display: flex
-      flex-direction: column
-      &--small_1
-        grid-area: 2/1/3/3
-      &--small_2
-        grid-area: 3/1/4/3
-      &--small_3
-        grid-area: 4/1/5/3
-      &--small_4
-        grid-area: 5/1/6/3
-      &__image
-        width: 100%
-        height: 50%
-        border-radius: 8px 0px 0px 0
-        &--large
-          width: 100%
-          height: 45%
-          border-radius: 8px 0px 0px 0
-      &__info
-        height: 100%
-        display: flex
-        justify-content: space-around
-      &__flash-offer
-        padding: 8px 12px
-        font-size: 8px
-        line-height: 10px
-
-    &-booking
-      &__text
-        &--long
-          display: inline
-          margin-bottom: 7px
-    &-title
-      font-size: 20px
-      margin-top: 20px
-
-
+  .footer
+    &__input
+      flex-basis: 100%
 
 //max-width: 576px
 @media ( max-width: 576px )
@@ -365,10 +360,38 @@
   .packages
     &-content
       display: grid
-      grid-template: repeat(3, 343px)/repeat(2, 47.6%)
+      grid-template: repeat(3, 343px)/repeat(2, 48.1%)
       grid-gap: 20px
 
-//max-width: 605px
+  .footer
+    &-grid
+      display: grid
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+
+//max-width: 500px
 @media ( max-width: 605px )
   .packages
     &-content
@@ -411,7 +434,15 @@
     &-title
       font-size: 20px
       margin-top: 20px
-      
+
+  .footer
+    &__bottom
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__pay
+      margin-top: 10px
+
 //max-width: 340px
 @media ( max-width: 340px )
 
@@ -428,3 +459,37 @@
       display: grid
       grid-template: repeat(5, 400px)/repeat(2, 47%)
       grid-gap: 20px
+
+  .footer
+    &__social
+      &-links
+        justify-content: start
+      &-network
+        flex-direction: column
+    &__bottom
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin-top: 30px
+    &__item
+      &--bottom
+        margin-right: 13px
+      &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+      &__pay
+        margin-top: 10px
+    &__info
+      order: -1
+      margin-bottom: 15px
+    &__block
+      flex-direction: column
+      align-items: start
+    &__link
+      &--social
+        margin-right: 10px
+    &__title
+      &--inline
+        margin-bottom: 20px
