@@ -1,6 +1,20 @@
 textarea
   resize: none
 
+input::placeholder
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: #BDBDBD
+
+textarea::placeholder
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: #BDBDBD
+
 .footer
   background-color: $dark
   color: $light
@@ -84,7 +98,7 @@ textarea
     background-color: #fff
     border-radius: 4px
     border: none
-    padding: 0 23px
+    padding: 17px 23px
     height: 50px
     margin-bottom: 15px
     flex-basis: 48%
@@ -104,6 +118,7 @@ textarea
     background-color: $primary
     border-radius: 4px
     border: none
+    cursor: pointer
   &__block
     width: 100%
     display: flex
@@ -120,3 +135,5 @@ textarea
     justify-content: space-between
     margin-top: 102px
     margin-left: 38%
+  &__telephone
+    margin: 0
