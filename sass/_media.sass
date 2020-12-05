@@ -171,6 +171,8 @@
     &__block
       flex-direction: column
     &__button
+      order: 2
+    &__info
       margin-bottom: 20px
 
 //max-width: 767px
@@ -446,6 +448,13 @@
       &-form
         grid-row: 7
         grid-column: 1
+
+//max-height: 510px
+@media (max-height: 510px)
+  .modal
+    &__dialog
+      height: 98vh
+      overflow: auto
 
 //max-width: 500px
 @media ( max-width: 605px )
