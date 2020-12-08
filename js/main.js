@@ -69,4 +69,23 @@ $( document ).on( 'keydown', function ( e ) {
     }
 });
 
+//Обработка форм
+$(".form").each(function(){
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    name: "We need your name",
+    email: {
+      required: "We need your email",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone:{
+      required: "We need your number"
+    },
+  }
 });
+})
+
+$('.input_phone').mask('+7 (999) 999-99-99');
+
+});     
