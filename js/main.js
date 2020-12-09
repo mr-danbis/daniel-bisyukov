@@ -100,4 +100,5 @@ $(".newsletter__subscribe").each(function(){
 
 $('.input_phone').mask('+7 (999) 999-99-99');
 
+AOS.init();
 });     
