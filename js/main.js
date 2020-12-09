@@ -86,6 +86,18 @@ $(".form").each(function(){
 });
 })
 
+$(".newsletter__subscribe").each(function(){
+  $(this).validate({
+  errorClass: "subscribe--invalid",
+  messages: {
+    email: {
+      required: "We need your email",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+  }
+});
+})
+
 $('.input_phone').mask('+7 (999) 999-99-99');
 
 });     
