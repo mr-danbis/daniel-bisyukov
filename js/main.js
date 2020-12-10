@@ -73,6 +73,13 @@ $( document ).on( 'keydown', function ( e ) {
 $(".form").each(function(){
   $(this).validate({
   errorClass: "invalid",
+
+  rules: {
+    phone:{
+      minlength: 18
+    }
+  },
+
   messages: {
     name: "We need your name",
     email: {
@@ -80,7 +87,8 @@ $(".form").each(function(){
       email: "Your email address must be in the format of name@domain.com"
     },
     phone:{
-      required: "We need your number"
+      required: "We need your number",
+      minlength: "Please, enter whole number"
     },
   }
 });
