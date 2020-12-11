@@ -31,18 +31,21 @@
     &__info
       display: flex
       flex-direction: column
-      justify-content: space-around
+      justify-content: space-between
       padding: 23px 32px
       &--large
         padding: 46px 43px
+        padding-right: 21px
+        padding-bottom: 30px
     &__title
       font-style: normal
       font-weight: bold
       font-size: 18px
       line-height: 23px
       margin-bottom: 23px
+      margin-top: 3px
       &--large
-        margin-bottom: 27px
+        margin-top: 3px
     &__image
       width: 350px
       height: 250px
@@ -62,19 +65,21 @@
       top: 26px
       font-weight: 600
       border-radius: 0px 4px 4px 0px
-      padding: 8px 12px
+      padding: 4px 8px
       font-size: 8px
       line-height: 10px
       &--large
         padding: 8px 12px
         font-size: 12px
         line-height: 15px
+        width: 96px
     &__text
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 160.6%
-      margin-bottom: 38px
+      margin-left: 1px
+      margin-top: -29px
 
   &-booking
     display: flex
@@ -82,16 +87,26 @@
     justify-content: flex-start
     margin-bottom: 14px
     &--large
-      margin-bottom: 39px
+      margin-bottom: 0
+      margin-top: 5px
     &__text
-      margin-bottom: 11px
+      margin-bottom: 6px
+      &--large
+        margin-bottom: 9px
     &__icon
       margin-right: 11px
       &--large
         margin-right: 14px
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
 
   &-rating
-    margin-bottom: 5px
+    margin-top: -9px
+    &__star
+      margin-right: -2px
 
 .card
   &-bottom
@@ -101,6 +116,10 @@
     &__price
       display: flex
       flex-direction: column
+      margin-top: 0
+      &--large
+        margin-top: -11px
+        margin-left: 3px
     &__old
       font-style: normal
       font-weight: normal
@@ -120,3 +139,12 @@
       color: $light
       background-color: $primary
       cursor: pointer
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      margin-top: 23px
+      margin-right: -12px
+      &--large
+        margin-top: 11px
+        margin-right: 0

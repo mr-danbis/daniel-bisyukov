@@ -141,11 +141,11 @@
       <div class="hotel-info__text">
         <div class="hotel-wrapper">
           <div class="stars">
-            <img src="img/Star.svg" alt="star">
-            <img src="img/Star.svg" alt="star">
-            <img src="img/Star.svg" alt="star">
-            <img src="img/Star.svg" alt="star">
-            <img src="img/Star.svg" alt="star">
+            <img class="stars__img" src="img/Star.svg" alt="star">
+            <img class="stars__img" src="img/Star.svg" alt="star">
+            <img class="stars__img" src="img/Star.svg" alt="star">
+            <img class="stars__img" src="img/Star.svg" alt="star">
+            <img class="stars__img" src="img/Star.svg" alt="star">
           </div>
 
           <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
@@ -255,11 +255,11 @@
           <div class="packages-card__info packages-card__info--large">
             <div class="packages-card__name">
               <div class="packages-rating">
-                <img src="img/Star.svg" alt="star">
-                <img src="img/Star.svg" alt="star">
-                <img src="img/Star.svg" alt="star">
-                <img src="img/Star.svg" alt="star">
-                <img src="img/Star.svg" alt="star">
+                <img class="packages-rating__star" src="img/Star.svg" alt="star">
+                <img class="packages-rating__star" src="img/Star.svg" alt="star">
+                <img class="packages-rating__star" src="img/Star.svg" alt="star">
+                <img class="packages-rating__star" src="img/Star.svg" alt="star">
+                <img class="packages-rating__star" src="img/Star.svg" alt="star">
               </div>
               <div class="packages-card__title packages-card__title--large">Hotel Blue Haven</div>
             </div>
@@ -267,26 +267,26 @@
             llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim
             laborum magna mollit. Ipsum est fugiat velit ea ullamco do</div>
             <div class="packages-booking packages-booking--large">
-              <div class="packages-booking__text">
+              <div class="packages-booking__text packages-booking__text--large">
                 <img src="img/location.svg" alt="Icon: location" class="packages-booking__icon packages-booking__icon--large" />
                 <span class="packages-booking__description">1749 Wheeler Ridge Delaware</span>
               </div>
-              <div class="packages-booking__text">
+              <div class="packages-booking__text packages-booking__text--large">
                 <img src="img/user.svg" alt="Icon: user" class="packages-booking__icon packages-booking__icon--large" />
                 <span class="packages-booking__description">2 x Guests</span>
               </div>
-              <div class="packages-booking__text">
+              <div class="packages-booking__text packages-booking__text--large">
                 <img src="img/home.svg" alt="Icon: home" class="packages-booking__icon packages-booking__icon--large" />
                 <span class="packages-booking__description">1 x Room</span>
               </div>
             </div>
             <!-- /.booking__room -->
             <div class="card-bottom card-bottom--large">
-              <div class="card-bottom__price">
+              <div class="card-bottom__price card-bottom__price--large">
                 <span class="card-bottom__old">$ 10,500</span>
                 <span class="card-bottom__new">$ 8,500</span>
               </div>
-              <button class="card-bottom__button">Book Now</button>
+              <button class="card-bottom__button card-bottom__button--large">Book Now</button>
             </div>
           </div>
         </div>
@@ -522,7 +522,7 @@
     <div class="activities-wrapper">
       <div class="card activities__card">
         <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
-        <h3 class="card__title">The curious corner of chamarel</h3>
+        <h3 class="card__title">The curious corner<br />of chamarel</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
@@ -536,7 +536,7 @@
 
       <div class="card activities__card">
         <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
-        <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+        <h3 class="card__title">Tamarind falls hiking<br />trip - full day</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
@@ -651,12 +651,12 @@
         <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
         <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
         <ul class="footer__ul">
-          <li class="footer__item footer__item--mb-2">
+          <li class="footer__item footer__item--mb-2 footer__item footer__item--mb-2--location">
             <img src="img/map-marker.svg" alt="Icon: map" class="footer__icon">
             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
           </li>
           <li class="footer__item footer__item--mb-2">
-            <img src="img/phone-call.svg" alt="Icon: phone call" class="footer__icon">
+            <img src="img/phone-call.svg" alt="Icon: phone call" class="footer__icon footer__icon--phone">
             <p class="footer__telephone">
               Tel (business hours) : <a class="footer__link" href="tel:269 1500">269 1500</a> <br>
               Tel (hotline) Monday - Saturday: <a class="footer__link" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm) <br>
@@ -677,13 +677,13 @@
         <form action="send.php" method="POST" class="footer__form form">
          <div class="footer__input-group--main">
             <div class="footer__input-group">
-            <input type="text" class="input footer__input"  placeholder="Your Full Name*" name="name" required>
+            <input type="text" class="input footer__input input_name"  placeholder="Your Full Name*" name="name" required>
           </div>
           <div class="footer__input-group">
             <input type="tel" class="input footer__input input_phone" placeholder="Phone Number*" name="phone" required>
           </div>
          </div>
-          <textarea class="message footer__massage" placeholder="Message" name="message"></textarea>
+          <textarea class="message footer__massage textarea_message" placeholder="Message" name="message"></textarea>
          <div class="footer__block">
             <button class="button footer__button" type="submit">Send</button>
             <span class="info footer__info">* Required Fields</span> 
