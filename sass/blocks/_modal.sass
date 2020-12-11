@@ -15,18 +15,22 @@
       opacity: 1
   &__dialog
     position: fixed
-    top: 50%
+    top: 44%
     left: 50%
-    padding: 33px 88px
+    padding: 27px 88px
     background-color: $dark
     color: $light
     border-radius: 8px
     z-index: 101
     max-width: 478px
+    height: 487px
     transform: translate(-50%, -50%)
     visibility: hidden
     opacity: 0
     transition: opacity 0.3s
+    display: flex
+    align-items: center
+    flex-direction: column
     &--visible
       visibility: visible
       opacity: 1
@@ -42,17 +46,17 @@
     font-size: 18px
     line-height: 23px
     text-transform: uppercase
-    margin-top: 0
+    margin-bottom: 9px
+    margin-top: 11px
     text-align: center
   &__input
     width: 100%
-    margin-top: 15px
+    margin-bottom: 15px
+    height: 50px
   &__message
     width: 100%
     min-height: 123px
-    margin-top: 15px
-  &__button
-    margin-top: 15px
+    margin-bottom: 11px
   &__block
     width: 100%
     display: flex
@@ -60,3 +64,7 @@
     justify-content: space-between
   &__button
     font-size: 12px
+
+.info
+  margin-right: -1px
+  margin-top: -1px
