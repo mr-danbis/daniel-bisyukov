@@ -2482,6 +2482,7 @@ textarea::placeholder {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-top: -23px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -2527,6 +2528,8 @@ textarea::placeholder {
   }
   .card-bottom__button {
     padding: 10px 10px;
+    margin-top: 3px;
+    margin-right: 0px;
   }
   .packages-content {
     display: -ms-grid;
@@ -2568,6 +2571,7 @@ textarea::placeholder {
   }
   .packages-card__info--large {
     height: 100%;
+    padding: 24px;
   }
   .packages-card__text--large {
     display: none;
@@ -2584,9 +2588,21 @@ textarea::placeholder {
   .packages-booking__text {
     margin-bottom: 7px;
   }
+  .card-bottom__button--large {
+    margin-right: -62px;
+  }
+  .footer__input {
+    width: 101%;
+  }
   .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer__message {
+    min-width: 101%;
+  }
+  .input_phone {
+    margin-left: -6px;
   }
   .modal__dialog {
     min-width: 65%;
