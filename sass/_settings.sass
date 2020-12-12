@@ -35,18 +35,35 @@ img
   border: none
   cursor: pointer
   font-size: 11px
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
 
-.card-bottom__button:hover
-  background-color: #7135FF
-.subscribe__button:hover
-  background-color: #7135FF
-.card__button:hover
+.search__button,
+.modal__button,
+.booking__button,
+.card__button,
+.card-bottom__button,
+.subscribe__button,
+.footer__button,
+.footer__button--back
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.search__button:hover
   background-color: #7135FF
 .modal__button:hover
   background-color: #7135FF
 .booking__button:hover
   background-color: #7135FF
-.search__button:hover
+.card__button:hover
+  background-color: #7135FF
+.card-bottom__button:hover
+  background-color: #7135FF
+.subscribe__button:hover
+  background-color: #7135FF
+.footer__button:hover
   background-color: #7135FF
 .footer__button--back:hover
   background-color: #7135FF
@@ -63,8 +80,27 @@ img
   background-color: #B911F0
 .search__button:active
   background-color: #B911F0
+.footer__button:active
+  background-color: #B911F0
 .footer__button--back:active
   background-color: #B911F0
+
+.link-hover
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.link-hover:hover
+  color: #7135FF
+.link-hover:active
+  color: #B911F0
+
+.link-hover_social:hover
+  background-color: #7135FF
+  border-radius: 50%
+.link-hover_social:active
+  background-color: #B911F0
+  border-radius: 50%
 
 .info
   font-style: normal
