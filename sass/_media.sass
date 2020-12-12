@@ -309,6 +309,7 @@
           display: none
         &--visible
           display: flex
+          margin-bottom: 7px
     &__user
       flex-direction: column
       justify-content: center
@@ -324,8 +325,11 @@
       padding-top: 30px
       &--visible
         display: block
+        padding-top: 0
+        margin-top: -7px
     &-menu
       flex-direction: column
+      padding-top: 35px
       &__item
         margin-bottom: 20px
         &--mobile
@@ -595,6 +599,11 @@
 
 //max-width: 500px
 @media ( max-width: 605px )
+
+  .navbar
+    &__search
+      width: 75%
+
   .packages
     &-content
       display: grid
@@ -719,6 +728,16 @@
     &__mobile
       &--fixed
         w92.5
+    &__search
+      width: 72%
+      margin-bottom: 16px
+    &-menu
+      &__item
+        margin-bottom: 18px
+  
+  .search
+    &__input
+      width: 293px
 
   .breadcrumb
     &-list

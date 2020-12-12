@@ -2349,6 +2349,7 @@ textarea::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 7px;
   }
   .navbar__user {
     -webkit-box-orient: vertical;
@@ -2373,12 +2374,15 @@ textarea::placeholder {
   }
   .navbar-bottom--visible {
     display: block;
+    padding-top: 0;
+    margin-top: -7px;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 35px;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
@@ -2733,6 +2737,9 @@ textarea::placeholder {
 }
 
 @media (max-width: 605px) {
+  .navbar__search {
+    width: 75%;
+  }
   .packages-content {
     display: -ms-grid;
     display: grid;
@@ -2917,6 +2924,16 @@ textarea::placeholder {
   .navbar-top {
     padding-top: 21px;
     padding-bottom: 29px;
+  }
+  .navbar__search {
+    width: 72%;
+    margin-bottom: 16px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 18px;
+  }
+  .search__input {
+    width: 293px;
   }
   .breadcrumb-list {
     margin-top: -7px;
