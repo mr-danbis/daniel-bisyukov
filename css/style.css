@@ -1628,6 +1628,7 @@ textarea::placeholder {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  margin-top: 31px;
 }
 
 .footer__categories {
