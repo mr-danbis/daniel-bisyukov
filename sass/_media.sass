@@ -297,7 +297,7 @@
 
   .navbar
     &__mobile
-      &--fixed
+      &-fixed
         position: fixed
         right: 0
         left: 0
@@ -590,8 +590,8 @@
       &-form
         grid-row: 7
 
-//max-height: 510px
-@media (max-height: 510px)
+//max-height: 512px
+@media (max-height: 512px)
   .modal
     &__dialog
       height: 98vh
@@ -726,7 +726,7 @@
       padding-top: 21px
       padding-bottom: 29px
     &__mobile
-      &--fixed
+      &-fixed
         w92.5
     &__search
       width: 72%
@@ -734,7 +734,7 @@
     &-menu
       &__item
         margin-bottom: 18px
-  
+
   .search
     &__input
       width: 293px
@@ -882,3 +882,15 @@
   .input
     margin-top: 0
     height: 50px
+
+  .modal
+    &__input
+      width: 100%
+      margin-top: 15px
+      margin-bottom: 0
+      height: 50px
+    &__message
+      width: 100%
+      min-height: 123px
+      margin-top: 15px
+      margin-bottom: 15px
