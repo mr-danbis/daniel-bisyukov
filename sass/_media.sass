@@ -33,12 +33,17 @@
         width: 100%
         object-fit: cover
         &--large
-          min-width: 50%
+          width: 50%
+          height: 100%
       &__info
         padding: 15px 30px
         &--large
           padding: 30px
           padding-bottom: 17px
+          width: 50%
+      &__text
+        &--large
+          width: 410px
       &__title
         margin-bottom: 15px
         order: -1
@@ -49,9 +54,16 @@
       margin-bottom: 10px
 
   .footer
+    &__legal
+      margin-left: 50px
     &__input
       &-group
         flex-basis: 100%
+    &__title
+      &-additional
+        width: 250px
+      &-legal
+        width: 200px
 
 //max-width:  992px
 @media ( max-width:  992px )
@@ -131,8 +143,13 @@
       &__image
         width: 100%
         object-fit: cover
+        &--large
+          min-width: 50%
       &__info
         padding: 20px 30px
+      &__text
+        &--large
+          width: 300px
 
   .footer
     &-grid
@@ -570,10 +587,16 @@
       grid-row: 1
       grid-column: 1
     &__social
+      &-links
+        margin-top: 10px
+        margin-right: 5px
+        justify-content: start
       &-network
         grid-row: 2
         grid-column: 1
         margin-left: 0
+        display: flex
+        flex-direction: column
     &__legal
       grid-row: 3
       grid-column: 1
@@ -590,6 +613,9 @@
         grid-column: 1
       &-form
         grid-row: 7
+    &__link
+      &--social
+        margin-right: 15px
 
 //max-height: 512px
 @media (max-height: 512px)
@@ -826,25 +852,27 @@
   .footer
     &__logo
       width: 34%
-      margin-top: 6px
+      margin-top: 15px
     &__title
       width: 260px
       margin: -16px 0 16px 0
       &--inline
-        margin-top: -27px
+        margin-top: -14px
         margin-bottom: 22px
       &--contact
         margin-bottom: 28px
         margin-left: -4px
         margin-bottom: 26px
+    &__social
+      &-links
+        margin-bottom: 21px
     &__contact
       &-details
-        margin-top: 19px
-        margin-left: 2px
+        margin-bottom: 21px
       &-form
         padding-top: 28px
         margin-left: -1px
-        width: 95%
+        width: 107%
     &__text
       line-height: 23px
       width: 280px
@@ -883,7 +911,15 @@
     &__pay
       margin-left: -11px
     &-grid
-      grid-gap: normal
+      grid-gap: 0
+      grid-row-gap: 20px
+
+    &__legal
+      margin-bottom: 21px
+    &__additional
+      margin-bottom: 21px
+    &__categories
+      margin-bottom: 17px
 
   .input
     margin-top: 0
@@ -900,4 +936,3 @@
       min-height: 123px
       margin-top: 15px
       margin-bottom: 15px
-      

@@ -75,13 +75,21 @@ $(".form").each(function(){
   errorClass: "invalid",
 
   rules: {
+    name: {
+      minlength: 2,
+      lettersonly : true
+    },
     phone:{
       minlength: 18
     }
   },
 
   messages: {
-    name: "We need your name",
+    name: {
+      required: "We need your name",
+      minlength: "Enter two or more characters",
+      lettersonly: "Please enter letters"
+    },
     email: {
       required: "We need your email",
       email: "Your email address must be in the format of name@domain.com"
@@ -107,6 +115,4 @@ $(".newsletter__subscribe").each(function(){
 })
 
 $('.input_phone').mask('+7 (999) 999-99-99');
-
-AOS.init();
 });     
